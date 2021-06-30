@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+  }
+
+
+/*Top menu*/
+header {
+    background-color: white;
+}
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo {
+    margin-left: 90px;
+    margin-top: -40px;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+}
+nav {
+    float: right;
+
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+nav li {
+    display: inline-block;
+    margin:10px 30px 10px 0px;
+
+}
+li {
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+
+    }
+}
+
+
+/*Added slideshow*/
+.mySlides {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    height: 715px;
+    width: 100%;
+
+}
+.slide_1 {
+    background-image:url(image/slide_1.jpg);
+    
+}
+.slide_2 {
+    background-image:url(image/slide_2.jpg);
+}
+.slide_3 {
+    background-image:url(image/slide_3.jpg);
+}
+.slide_4 {
+    background-image:url(image/slide_4.jpg);
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    
+}
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+/* End of slideshow */
+
+/* Added pictures for menu*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    justify-content: space-evenly;
+ 
+}
+.menu_picture {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+    width: 500px;
+    height: 700px;
+    padding-bottom: 15px;
+    
+    &_text {
+        text-decoration: none;
+        color: black;
+    }
+}
+/* Added social media icons */
+.social {
+    border-bottom: grey 2px solid;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fa {
+    padding: 9px 32px 32px 14px;
+    font-size: 25px;
+    width: 24px;
+    height: 2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 8px 10px 3px;
+    border-radius: 30%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background:black;
+    color: white;
+}
+.fa-instagram {
+    background: black;
+    color: white;
+}
+.fa-linkedin {
+    background: black;
+    color: white;
+}
+
+.copyrights {
+    font-size: 12px;
+    color: grey;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+/* Added style for contact page*/
+.background_contacts {
+    
+    background-image: url(image/slide_2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+    background-position: center;
+}
+/* Added style for About Me page*/
+.background_about_me {
+    background-image: url(image/slide_1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 660px;
+    background-position: center;
+}
+
+/* Added image gallery for Private interior page */
+
+
+/* Added image gallery for Public interior page */
+
+/* Picture grid 
+.column {
+    float: left;
+    width: 37.5%;
+}
+
+.grid-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    grid-template-columns: 665px 2fr;
+    grid-template-rows: 50px 2fr;
+}
+
+.grid-item{
+    position:relative;
+    img {
+        width: 500px;
+        height: 700px;
+        margin-left: 95px;
+        
+        }
+    &:hover {
+        opacity: 0.3;
+}
+}
+.grid-text {
+    opacity: 0;
+    margin-top: -350px;
+    margin-left: 250px;
+    font-size: 18px;
+    font-weight: bold;    
+        a {
+            text-decoration: none;
+            color: black;            
+        }
+    &:hover {
+        opacity: 1;
+    }
+}
+*/
