@@ -68,14 +68,10 @@
 <!--End of slideshow script -->
 <!-- Added menu pictures-->
         <div class="container">
-            <img class="menu_picture" src="image/private.jpg" alt="Privātais Interjers">
-                <a class="menu_picture_text" href="private.php">PRIVĀTAIS INTERJERS</a>
-            <img class="menu_picture" src="image/public.jpg" alt="Publiskais Interjers">
-                <a class="menu_picture_text" href="private.php">PUBLISKAIS INTERJERS</a>
-            <img class="menu_picture" src="image/about_me.jpg" alt="Par Mums">
-                <a class="menu_picture_text" href="private.php">PAR MUMS</a>
-            <img class="menu_picture" src="image/contacts.jpg" alt="Kontakti"> 
-                <a class="menu_picture_text" href="private.php">KONTAKTI</a>
+            <div class="menu_picture">
+                <img class="menu_picture__image" src="image/private.jpg" alt="Privātais Interjers">
+                <a class="menu_picture__text" href="private.php">PRIVĀTAIS INTERJERS</a>
+            </div>
         </div>
 <!-- Added social media link -->
         <p class="social">

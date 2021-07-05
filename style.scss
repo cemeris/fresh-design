@@ -104,18 +104,36 @@ li {
  
 }
 .menu_picture {
-    opacity: 1;
-    width: 100%;
-    height: auto;
-    transition: .2s ease;
-    backface-visibility: hidden;
-    width: 500px;
-    height: 700px;
-    padding-bottom: 15px;
+    position:relative;
+    &__image {
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        transition: .2s ease;
+        backface-visibility: hidden;
+        width: 500px;
+        height: 700px;
+        padding-bottom: 15px;
+    }
     
-    &_text {
+    &__text {
+        position:absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(255,255,255, 0.4);
+        opacity:0;
+        display: inline-block;
+        text-align: center;
+        line-height: 700px;
+        width: 500px;
+        height: 700px;
         text-decoration: none;
         color: black;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 2s;
+        }
     }
 }
 /* Added social media icons */
